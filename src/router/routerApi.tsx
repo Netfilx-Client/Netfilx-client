@@ -1,11 +1,22 @@
 import { createBrowserRouter } from "react-router-dom";
 import GlobalContainer from "../components/block/GlobalContainer";
+import Main from "../pages/main/main";
+import Login from "../pages/login/login";
 
 const router = createBrowserRouter([
   {
-    path: "*",
+    path: "/",
     element: <GlobalContainer />,
-    children: [{}],
+    children: [
+      {
+        path: "/",
+        element: <Main />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+    ],
   },
 ]);
 
