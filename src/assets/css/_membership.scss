@@ -1,4 +1,9 @@
-.Membership_Container .membership_device_img img {
-  width: 45vw;
+.Membership_Container .membership_device_img {
+  width: 500px;
   height: 25vh;
+}
+@media (max-width: 800px) {
+  .Membership_Container .membership_device_img {
+    width: 300px;
+  }
 }
