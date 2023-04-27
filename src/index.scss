@@ -1,23 +1,9 @@
-@font-face {
-  font-family: "NotoSans";
-  src: url("./assets/font/NotoSansKR-Bold.otf");
-  font-weight: bold;
-}
-@font-face {
-  font-family: "NotoSans";
-  src: url("./assets/font/NotoSansKR-Regular.otf");
-  font-weight: normal;
-}
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@charset "UTF-8";
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+@import "./assets/css/main";
+
+@import "./assets/css/login";
+
+@import "./assets/css/font.scss";
+
+@import "./assets/css/reset.scss";

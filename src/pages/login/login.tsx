@@ -4,6 +4,6 @@ interface LoginProps {
   children?: React.ReactElement | React.ReactElement[];
 }
 const Login = (props: LoginProps) => {
-  return <>login</>;
+  return <div className="login_container">login</div>;
 };
 export default Login;
