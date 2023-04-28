@@ -1,0 +1,77 @@
+.Footer_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2% 5%;
+  font-family: NotoSans;
+
+  .Footer_PhoneNumber {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .Footer_ShortCuts {
+    margin-top: 2vh;
+    width: 100%;
+    font-size: 14px;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 1vh;
+      li {
+        margin-right: 100px;
+        width: 20%;
+        margin-bottom: 1vh;
+      }
+    }
+  }
+  .Footer_Language {
+    select {
+      font-size: 16px;
+      width: 120px;
+      height: 40px;
+      background: url(../img/globe.png) 5px center no-repeat;
+      background-size: 20px;
+      padding-left: 30px;
+    }
+  }
+  .Footer_Information {
+    margin-top: 2vh;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .Footer_container {
+    padding: 5% 5%;
+  }
+}
+@media (max-width: 500px) {
+  .Footer_container {
+    .Footer_PhoneNumber {
+      font-size: 16px;
+    }
+    .Footer_ShortCuts {
+      ul {
+        flex-direction: column;
+        li {
+          width: 100%;
+        }
+      }
+    }
+    .Footer_Language {
+      select {
+        font-size: 14px;
+        width: 100px;
+        height: 35px;
+        background-size: 15px;
+        padding-left: 25px;
+      }
+    }
+    .Footer_Information {
+      font-size: 12px;
+    }
+  }
+}

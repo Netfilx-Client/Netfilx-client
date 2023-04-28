@@ -5,6 +5,7 @@
   --white: #fff;
   --black: #000;
   --red: #d81f26;
+  --navy: #00081d;
 }
 
 // border-box 초기화
@@ -115,8 +116,7 @@ table {
 // 디자인 초기화
 input,
 textarea,
-button,
-select {
+button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

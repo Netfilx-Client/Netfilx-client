@@ -1,0 +1,42 @@
+.Header_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  .Header_logo {
+    background-image: url(../img/netflix.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 150px;
+    height: 100px;
+  }
+  .Header_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .Header_language {
+      select {
+        font-size: 16px;
+        width: 120px;
+        height: 35px;
+        background: url(../img/globe.png) 5px center no-repeat;
+        background-size: 20px;
+        padding-left: 30px;
+      }
+    }
+    .Header_login {
+      width: 80px;
+      height: 35px;
+      background-color: var(--red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      color: var(--white);
+      margin-left: 10px;
+    }
+  }
+}
