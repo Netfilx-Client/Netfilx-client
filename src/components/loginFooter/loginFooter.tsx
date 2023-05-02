@@ -1,33 +1,46 @@
 import React, { useEffect, useRef, useState } from "react";
+import Icon from "../../assets/icons/icon";
 
 interface LoginFooterProps {
   children?: React.ReactElement | React.ReactElement[];
 }
 const LoginFooter = (props: LoginFooterProps) => {
   return (
-    <div
-      className="LoginFooter_container"
-      style={{ backgroundColor: "#f3f3f3" }}
-    >
-      <div className="LoginFooter_PhoneNumber">
-        <p>질문 있으신가요? </p> &nbsp;<p>문의 전화 : 080 - 011 - 9587</p>
+    <div className="LoginFooter_container">
+      <div className="LoginFooter_sns">
+        <Icon.facebook />
+        <Icon.insta />
+        <Icon.twitter />
+        <Icon.youtube />
       </div>
-      <div className="LoginFooter_ShortCuts">
+      <div className="LoginFooter_shortCuts">
         <ul>
           <li>
-            <a href="#">자주 묻는 질문</a>
+            <a href="#">화면 해설</a>
           </li>
           <li>
             <a href="#">고객 센터</a>
           </li>
           <li>
-            <a href="#">넷플릭스 스토어</a>
+            <a href="#">기프트 카드</a>
+          </li>
+          <li>
+            <a href="#">미디어 센터</a>
+          </li>
+          <li>
+            <a href="#">투자 정보</a>
+          </li>
+          <li>
+            <a href="#">입사 정보</a>
           </li>
           <li>
             <a href="#">이용 약관</a>
           </li>
           <li>
-            <a href="#">개인정보 처리 방침</a>
+            <a href="#">개인 정보</a>
+          </li>
+          <li>
+            <a href="#">법적 고지</a>
           </li>
           <li>
             <a href="#">쿠키 설정</a>
@@ -35,17 +48,13 @@ const LoginFooter = (props: LoginFooterProps) => {
           <li>
             <a href="#">회사 정보</a>
           </li>
+          <li>
+            <a href="#">문의 하기</a>
+          </li>
         </ul>
       </div>
-      <div className="LoginFooter_Language">
-        <select name="LoginFooter_LanguageSelect" id="Footer_LanguageSelect">
-          <option label="한국어" value="korea">
-            한국어
-          </option>
-          <option label="English" value="english">
-            English
-          </option>
-        </select>
+      <div className="LoginFooter_serviceCode">
+        <button>서비스 코드</button>
       </div>
       <div className="LoginFooter_Information">
         넷플릭스서비시스코리아 유한회사 통신판매업신고번호:

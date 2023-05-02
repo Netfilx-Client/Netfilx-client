@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import Header from "../header/header";
 import Footer from "../footer/footer";
+import LoginHeader from "../loginHeader/loginHeader";
+import LoginFooter from "../loginFooter/loginFooter";
 
 const GlobalContainer = () => {
   return (
@@ -9,9 +11,12 @@ const GlobalContainer = () => {
       className="root"
       style={{ padding: "0 1.5rem", backgroundColor: "var(--navy)" }}
     >
-      <Header />
+      <LoginHeader />
       <Outlet />
-      <Footer />
+      <LoginFooter />
+      {/* <Header />
+      <Outlet />
+      <Footer /> */}
     </div>
   );
 };

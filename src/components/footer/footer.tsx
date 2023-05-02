@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
+import icon from "../../assets/icons/icon";
 
 interface FooterProps {
   children?: React.ReactElement | React.ReactElement[];
 }
 const Footer = (props: FooterProps) => {
   return (
-    <div className="Footer_container">
+    <div className="Footer_container" style={{ color: "#fff" }}>
       <div className="Footer_PhoneNumber">
         <p>질문 있으신가요? </p> &nbsp;<p>문의 전화 : 080 - 011 - 9587</p>
       </div>
@@ -35,7 +36,15 @@ const Footer = (props: FooterProps) => {
         </ul>
       </div>
       <div className="Footer_Language">
-        <select name="Footer_LanguageSelect" id="Footer_LanguageSelect">
+        <select
+          name="Footer_LanguageSelect"
+          id="Footer_LanguageSelect"
+          style={
+            {
+              // background: `url(${icon.global}) 5px center no-repeat`,
+            }
+          }
+        >
           <option label="한국어" value="korea">
             한국어
           </option>

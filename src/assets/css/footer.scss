@@ -16,6 +16,7 @@
     margin-top: 2vh;
     width: 100%;
     font-size: 14px;
+    color: #808080;
     ul {
       display: flex;
       flex-wrap: wrap;
@@ -32,14 +33,17 @@
       font-size: 16px;
       width: 120px;
       height: 40px;
-      background: url(../img/globe.png) 5px center no-repeat;
       background-size: 20px;
-      padding-left: 30px;
+      padding-left: 35px;
+      background: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none' %3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.9992 24.2989C5.38155 24.2989 0 18.9733 0 12.425C0 5.87661 5.38155 0.551084 11.9992 0.551084C18.6169 0.551084 24 5.87661 24 12.425C24 18.9733 18.6169 24.2989 11.9992 24.2989ZM12.0248 1.91759C6.22376 1.91759 1.5019 6.62372 1.5019 12.409C1.5019 18.1959 6.22376 22.902 12.0248 22.902C17.8291 22.902 22.5493 18.1959 22.5493 12.409C22.5493 6.62372 17.8291 1.91759 12.0248 1.91759Z' fill='%23fff' /%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.2082 2.01656H12.6845V24.5H11.2082V2.01656Z' fill='%23fff' /%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 11.5949H22.3524V13.0667H0V11.5949Z' fill='%23fff' /%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.60117 6.80571H21.4653V8.25203H1.60117V6.80571Z' fill='%23fff' /%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.60117 16.384H21.4653V17.8559H1.60117V16.384Z' fill='%23fff' /%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.7158 24.1328C7.55754 22.1006 4.87237 17.4408 4.87237 12.2605C4.87237 7.20001 7.47108 2.58328 11.498 0.5L12.2362 1.91599C8.7344 3.73108 6.47355 7.79067 6.47355 12.2605C6.47355 16.8342 8.80966 20.9321 12.4203 22.6977L11.7158 24.1328Z' fill='%23fff' /%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.3931 24.0291L11.6421 22.6195C15.067 20.8092 17.2799 16.7432 17.2799 12.2605C17.2799 7.83058 15.1039 3.78376 11.7398 1.95271L12.5068 0.552681C16.3784 2.65671 18.881 7.25269 18.881 12.2605C18.8826 17.3291 16.3336 21.9474 12.3931 24.0291Z' fill='%23fff' /%3E%3C/svg%3E")
+        5px center no-repeat;
+      color: #fff;
     }
   }
   .Footer_Information {
     margin-top: 2vh;
     font-size: 14px;
+    color: #808080;
   }
 }
 
