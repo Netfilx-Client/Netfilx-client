@@ -7,10 +7,7 @@ import LoginFooter from "../loginFooter/loginFooter";
 
 const GlobalContainer = () => {
   return (
-    <div
-      className="root"
-      style={{ padding: "0 1.5rem", backgroundColor: "var(--navy)" }}
-    >
+    <div className="root" style={{ backgroundColor: "var(--navy)" }}>
       <LoginHeader />
       <Outlet />
       <LoginFooter />

@@ -1,10 +1,11 @@
 .Header_container {
+  position: fixed;
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 50px;
   .Header_logo {
     background-image: url(../img/netflix.png);
     background-repeat: no-repeat;

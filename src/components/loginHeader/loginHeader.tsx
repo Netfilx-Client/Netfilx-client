@@ -6,12 +6,31 @@ interface LoginHeaderProps {
   children?: React.ReactElement | React.ReactElement[];
 }
 const LoginHeader = (props: LoginHeaderProps) => {
+  const [scrollY, setScrollY] = useState<number>(0);
+  const listener = () => {
+    setScrollY(window.pageYOffset);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", listener);
+    return () => {
+      window.removeEventListener("scroll", listener);
+    };
+  });
   const mobileMenu = () => {
     $(".mobile_ul").slideToggle();
     console.log(true);
   };
   return (
-    <div className="LoginHeader_container">
+    <div
+      className="LoginHeader_container"
+      style={
+        scrollY == 0
+          ? {
+              backgroundImage: " linear-gradient(black, rgba(255,255,255,0.1))",
+            }
+          : { backgroundColor: "#000" }
+      }
+    >
       <div className="LoginHeader_left">
         <div className="LoginHeader_logo"></div>
         <div className="LoginHeader_menu">

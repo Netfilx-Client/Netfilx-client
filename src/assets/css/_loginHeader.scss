@@ -1,10 +1,12 @@
 .LoginHeader_container {
+  position: fixed;
   width: 100%;
   display: flex;
   color: #ffffff;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  border: none;
+  padding: 0 50px;
   font-size: 14px;
   .LoginHeader_left {
     display: flex;
